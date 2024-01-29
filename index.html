@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 10%;
+        }
+        #div{
+            height: 30px;
+            width: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="show()">on/off</button>
+    <div id="container"></div>
+<button>Click</button>
+<div id="div" ondblclick="click()"></div>
+
+    <script>
+
+           let btn = document.getElementById("btn");
+           let container= document.getElementById("container")
+        function show(){
+           
+            if( container.style.backgroundColor != "yellow"){
+                container.style.backgroundColor = "yellow"
+                
+
+            }
+                else{
+                    container.style.backgroundColor = ""
+                }
+            
+
+        }
+        function click(){
+            alert("function chl gaya")
+        }
+    </script>
+</body>
+</html>
